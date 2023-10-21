@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYC Subway | Design for Understanding</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Mukta|Rajdhani&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./HCIsubway_interactive.css?v2.1">
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script type="text/javascript" src="../../js/data.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-ico" href="../../img/logo.ico" />
+</head>
+<body>
+
+	<script>
+		$(function () { 
+		  count = 0; 
+		  var foo = setInterval(function () { 
+		  	if(count == 250) cancelInterval(foo);
+		    count++; 
+		    $("#date").fadeOut(200, function () { 
+		      $(this).text(date[count % date.length]).fadeIn(200); 
+		    }); 
+		  }, 1000); 
+		}); 
+	</script>
+
+<iframe src="./audio.mp3" allow="autoplay" id="myAudio" style="display: none"></iframe>
+
+<audio id="myAudio" autoplay loop>
+    <source src="./audio.mp3" type="audio/mp3">
+</audio>
+
+<script>
+	var x = document.getElementById("myAudio"); 
+  	x.play(); 
+</script>
+
+
+<section class="content">
+
+	<section class="isContent">
+
+		<section class="timeStamp">
+			<span id="date">17-Aug-2014</span>
+		</section>
+
+		<section class="bars">
+			<section class="leftBars">
+
+				<section id="Identification" class="barItems">
+					<span id="Identification_name" class="barNames">Identification</span>
+					<span class="barImage"><img src="./images/Identification.png"></span>
+					<span id="Identification_bar" class="barBar"></span>
+					<span id="Identification_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Carry" class="barItems">
+					<span id="Carry_name" class="barNames">Carry Bag</span>
+					<span class="barImage"><img src="./images/Carry.png"></span>
+					<span id="Carry_bar" class="barBar"></span>
+					<span id="Carry_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Electronics" class="barItems">
+					<span id="Electronics_name" class="barNames">Electronics</span>
+					<span class="barImage"><img src="./images/Electronics.png"></span>
+					<span id="Electronics_bar" class="barBar"></span>
+					<span id="Electronics_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Misc" class="barItems">
+					<span id="Misc_name" class="barNames">Misc</span>
+					<span class="barImage"><img src="./images/Misc.png"></span>
+					<span id="Misc_bar" class="barBar"></span>
+					<span id="Misc_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Tickets" class="barItems">
+					<span id="Tickets_name" class="barNames">Tickets</span>
+					<span class="barImage"><img src="./images/Tickets.png"></span>
+					<span id="Tickets_bar" class="barBar"></span>
+					<span id="Tickets_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Currency" class="barItems">
+					<span id="Currency_name" class="barNames">Currency</span>
+					<span class="barImage"><img src="./images/Currency.png"></span>
+					<span id="Currency_bar" class="barBar"></span>
+					<span id="Currency_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Clothing" class="barItems">
+					<span id="Clothing_name" class="barNames">Clothing</span>
+					<span class="barImage"><img src="./images/Clothing.png"></span>
+					<span id="Clothing_bar" class="barBar"></span>
+					<span id="Clothing_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Cell" class="barItems">
+					<span id="Cell_name" class="barNames">Accessories
+					</span>
+					<span class="barImage" id="Cell_image"><img src="./images/Cell.png"></span>
+					<span id="Cell_bar" class="barBar"></span>
+					<span id="Cell_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Keys" class="barItems">
+					<span id="Keys_name" class="barNames">Keys</span>
+					<span class="barImage"><img src="./images/Keys.png"></span>
+					<span id="Keys_bar" class="barBar"></span>
+					<span id="Keys_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Book" class="barItems">
+					<span id="Book_name" class="barNames">Book</span>
+					<span class="barImage" id="Book_image"><img src="./images/Book.png"></span>
+					<span id="Book_bar" class="barBar"></span>
+					<span id="Book_number" class="barNumber">1</span>
+				</section>
+				
+
+				
+
+				
+			</section>
+			<section class="rightBars">
+
+				<section id="Eye" class="barItems">
+					<span id="Eye_name" class="barNames">Eye Wear</span>
+					<span class="barImage"><img src="./images/Eye.png"></span>
+					<span id="Eye_bar" class="barBar"></span>
+					<span id="Eye_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Jewelry" class="barItems">
+					<span id="Jewelry_name" class="barNames">Jewelry</span>
+					<span class="barImage"><img src="./images/Jewelry.png"></span>
+					<span id="Jewelry_bar" class="barBar"></span>
+					<span id="Jewelry_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Medical" class="barItems">
+					<span id="Medical_name" class="barNames">Medical Equipment</span>
+					<span class="barImage"><img src="./images/Medical.png"></span>
+					<span id="Medical_bar" class="barBar"></span>
+					<span id="Medical_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Footwear" class="barItems">
+					<span id="Footwear_name" class="barNames">Footwear</span>
+					<span class="barImage"><img src="./images/Footwear.png"></span>
+					<span id="Footwear_bar" class="barBar"></span>
+					<span id="Footwear_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Home" class="barItems">
+					<span id="Home_name" class="barNames">Home Furnishings</span>
+					<span class="barImage"><img src="./images/Home.png"></span>
+					<span id="Home_bar" class="barBar"></span>
+					<span id="Home_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Toys" class="barItems">
+					<span id="Toys_name" class="barNames">Toys</span>
+					<span class="barImage"><img src="./images/Toys.png"></span>
+					<span id="Toys_bar" class="barBar"></span>
+					<span id="Toys_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Sports" class="barItems">
+					<span id="Sports_name" class="barNames">Sports Equipment</span>
+					<span class="barImage"><img src="./images/Sports.png"></span>
+					<span id="Sports_bar" class="barBar"></span>
+					<span id="Sports_number" class="barNumber">1</span>
+				</section>
+
+				<section id="Wallet" class="barItems">
+					<span id="Wallet_name" class="barNames">Tools</span>
+					<span class="barImage"><img src="./images/Wallet.png"></span>
+					<span id="Wallet_bar" class="barBar"></span>
+					<span id="Wallet_number" class="barNumber">1</span>
+				</section>
+
+
+				
+
+				
+
+				
+
+				
+
+				<section id="Musical" class="barItems">
+					<span id="Musical_name" class="barNames">Musical Instruments</span>
+					<span class="barImage"><img src="./images/Musical.png"></span>
+					<span id="Musical_bar" class="barBar"></span>
+					<span id="Musical_number" class="barNumber">1</span>
+				</section>
+
+				<section id="NYCT" class="barItems">
+					<span id="NYCT_name" class="barNames">NYCT Equipment</span>
+					<span class="barImage"><img src="./images/NYCT.png"></span>
+					<span id="NYCT_bar" class="barBar"></span>
+					<span id="NYCT_number" class="barNumber">1</span>
+				</section>
+
+				
+
+				
+
+				
+
+				
+
+			</section>
+		</section>
+
+		<section class="train">
+			<section class="trainMoving">
+				<img src="./images/trainfinal.png" id="subway">
+				<section class="dropping">
+					<img src="./images/Book.png" id="drop1">
+					<img src="./images/Identification.png" id="drop2">
+					<img src="./images/Carry.png" id="drop3">
+					<img src="./images/Electronics.png" id="drop4">
+					<img src="./images/Misc.png" id="drop5">
+					<img src="./images/Currency.png" id="drop6">
+					<img src="./images/Clothing.png" id="drop7">
+					<img src="./images/Keys.png" id="drop8">
+					<img src="./images/Cell.png" id="drop9">
+					<img src="./images/Eye.png" id="drop10">
+					<img src="./images/Footwear.png" id="drop11">
+					<img src="./images/Musical.png" id="drop12">
+					<img src="./images/Identification.png" id="drop13">
+					<img src="./images/Carry.png" id="drop14">
+				</section>
+			</section>
+		</section>
+
+	</section>
+
+</section>
+
+<script type="text/javascript" src="../../js/barAnimation.js"></script>
+
+
+</body>
+
+</html>
