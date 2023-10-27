@@ -1,0 +1,73 @@
+/* 
+
+COLOR USED
+
+from fff to 000
+
+#ffffff
+#FFEDDB
+#EDCDBB
+#E3B7A0
+#FFC3A1
+#F0997D
+#D3756B
+#A75D5D darker pink
+
+*/
+
+
+html, body,
+ul, li, ol, dl, dd, dt,
+p, h1, h2, h3, h4, h5, h6,
+form, fieldset, legend, img,
+div, header, footer, section, form, input, select{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	background-color: #BF9270;
+}
+
+body a{
+	text-decoration: none;
+	color: inherit;
+	z-index: 1000;
+}
+
+
+.content{
+    width: 92vw;
+    height: 92vh;
+    background-color: #FFEDDB;
+    margin: 4vh 4vw;
+}
+
+.wap{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+	.content{
+		display: none;
+	}
+	.footer{
+		display: none;
+	}
+	.wap{
+		display: inline-block;
+		color: white;
+		font-family: 'Figtree', sans-serif;
+		font-size: 7vw;
+		width: 50vw;
+		margin-left: 10vw;
+		margin-top: 30vh;
+
+	}
+}
