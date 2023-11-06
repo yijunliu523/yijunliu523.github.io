@@ -16,6 +16,7 @@
 <body>
     <section class="content">
         <section class="poem">
+            <ul class="verse placeholder"></ul>
             <ul class="verse verse1">
                 <li>For every extra boy gaining <span>literacy</span>,</li>
                 <li>She’s the <span>GDI’s</span> lost equity.</li>
@@ -43,6 +44,8 @@
                 <li>Gender, class, race, a complex weave,</li>
                 <li>A trap so tight, she struggles to escape.</li>
             </ul>
+
+            <ul class="verse placeholder"></ul>
         </section>
 
         <section class="vis">
@@ -53,7 +56,7 @@
                     <p>🤿 Dive into an interactive poetic experience that marries verse with data.</p>
                     <p>⬅️ On the left, you'll find the poem <i>What is She</i>, focusing on women's rights.</p>
                     <p>📈 As you proceed, you'll encounter <b>two visualizations</b> that correspond with highlighted lines from the poem, offering a quantitative perspective on the social issue.</p>
-                    <p>✅ Be warned: <b>only one visualization presents accurate data</b>. </p>
+                    <p>⚠️ Be warned: <b>only one visualization presents accurate data</b>. </p>
                     <p>❓ Can you discern societal reality from misconception? Hover and click the visualization you think to be the right one!</p><br/>
                     <p>Enjoy the journey! Ready?</p>
                 </section>
@@ -71,12 +74,17 @@
                     </section>
                 </section>
                 <section class="buttons">
-                    <a href="#vis1"><button class="vis_button button_prev">Prev</button></a>
-                    <a href="#vis3"><button class="vis_button button_next">Next</button></a>
+                    <div class="button-overlay" id="button-overlay-2"></div>
+                    <a href="#vis1"><button class="vis_button button_prev" id="button_2_prev">Prev</button></a>
+                    <a href="#vis3"><button class="vis_button button_next" id="button_2_next">Next</button></a>
                 </section>
                 
                 <section class="explain">
                     <p>The Gender Development Index (GDI) is a measure used to gauge gender equality in terms of life expectancy, education, and income within countries. It's Female HDI: Male HDI. Lower means female are having lower HDI than male in that country.</p>
+                </section>
+
+                <section id="message-box">
+                    <p></p>
                 </section>
             </section>
 
@@ -91,8 +99,13 @@
                     </section>
                 </section>
                 <section class="buttons">
-                    <a href="#vis2"><button class="vis_button button_prev">Prev</button></a>
-                    <a href="#vis4"><button class="vis_button button_next">Next</button></a>
+                    <div class="button-overlay" id="button-overlay-3"></div>
+                    <a href="#vis2"><button class="vis_button button_prev" id="button_3_prev">Prev</button></a>
+                    <a href="#vis4"><button class="vis_button button_next" id="button_3_next">Next</button></a>
+                </section>
+
+                <section id="message-box-2">
+                    <p></p>
                 </section>
                 
             </section>
@@ -108,8 +121,13 @@
                     </section>
                 </section>
                 <section class="buttons">
-                    <a href="#vis3"><button class="vis_button button_prev">Prev</button></a>
-                    <a href="#vis5"><button class="vis_button button_next">Next</button></a>
+                    <div class="button-overlay" id="button-overlay-4"></div>
+                    <a href="#vis3"><button class="vis_button button_prev" id="button_4_prev">Prev</button></a>
+                    <a href="#vis5"><button class="vis_button button_next" id="button_4_next">Next</button></a>
+                </section>
+
+                <section id="message-box-3">
+                    <p></p>
                 </section>
                 
             </section>
@@ -149,8 +167,13 @@
                     <p></p>
                 </section>
                 <section class="buttons">
-                    <a href="#vis4"><button class="vis_button button_prev">Prev</button></a>
-                    <a href="#vis6"><button class="vis_button button_next">Next</button></a>
+                    <div class="button-overlay" id="button-overlay-5"></div>
+                    <a href="#vis4"><button class="vis_button button_prev" id="button_5_prev">Prev</button></a>
+                    <a href="#vis6"><button class="vis_button button_next" id="button_5_next">Next</button></a>
+                </section>
+
+                <section id="message-box-4">
+                    <p></p>
                 </section>
             </section>
 
@@ -168,8 +191,13 @@
                     <p></p>
                 </section>
                 <section class="buttons">
-                    <a href="#vis5"><button class="vis_button button_prev">Prev</button></a>
-                    <a href="#vis7"><button class="vis_button button_next">Next</button></a>
+                    <div class="button-overlay" id="button-overlay-6"></div>
+                    <a href="#vis5"><button class="vis_button button_prev" id="button_6_prev">Prev</button></a>
+                    <a href="#vis7"><button class="vis_button button_next" id="button_6_next">Next</button></a>
+                </section>
+
+                <section id="message-box-5">
+                    <p></p>
                 </section>
             </section>
 
@@ -177,19 +205,18 @@
                 <h3 class="title" id="title2">Struggles to Escape: <p>A Snapshot of Gender Disparities</p></h3>
                 <section class="instruction" id="facts">
                     <ul>
-                        <li>The greatest percentage-based educational gender gap is in <b>Senegal</b>, where females average 2.6 years of schooling against males' 4.5 years.</li>
-                        <li><b>Togo</b> exhibits the largest absolute education gap between genders, standing at 3.4 years.</li>
-                        <li>The global Gender Development Index (GDI) is <b>0.947</b>, implying that women, on average, have worse life quality than men worldwide.</li>
-                        <li>Wage inequalities exist in <b>every</b> occupational tier, with the largest percentage-based disparity seen in <b>senior management and executive</b> positions (26.76%).</li>
-                        <li>In <b>India</b>, women dedicate an <b> extra 5 hours per day</b> to unpaid labor in comparison to men.</li>
-                        <li>Around the world, women allocate <b>133.1 more minutes each day</b> to unpaid tasks than men.</li>
-                        <li>Worldwide, women exceed men by 30 minutes in total daily work commitments.</li>
-                        <li>In <b>Kiribati, Fiji, Papua New Guinea, Solomon Islands, and Bangladesh</b>, over <b>50%</b> of women are victims of domestic violence.</li>
-                        <li>The global average rate of domestic violence against women is <b>26.28%</b>.</li>
-                        <li><b>Low-income</b> nations record the <b>smallest</b> rates of abortion and unintended pregnancies terminated through abortion.</li>
+                        <li>🏫 The greatest percentage-based educational gender gap is in <b>Senegal</b>, where females average 2.6 years of schooling against males' 4.5 years.</li>
+                        <li>🏫 <b>Togo</b> exhibits the largest absolute education gap between genders, standing at 3.4 years.</li>
+                        <li>📊 The global Gender Development Index (GDI) is <b>0.947</b>, implying that women, on average, have worse life quality than men worldwide.</li>
+                        <li>💰 Wage inequalities exist in <b>every</b> occupational tier, with the largest percentage-based disparity seen in <b>senior management and executive</b> positions (26.76%).</li>
+                        <li>🏠 In <b>India</b>, women dedicate an <b> extra 5 hours per day</b> to unpaid labor in comparison to men.</li>
+                        <li>🏠  Around the world, women allocate <b>133.1 more minutes each day</b> to unpaid tasks than men.</li>
+                        <li>⚠️ In <b>Kiribati, Fiji, Papua New Guinea, Solomon Islands, and Bangladesh</b>, over <b>50%</b> of women are victims of domestic violence.</li>
+                        <li>⚠️ The global average rate of domestic violence against women is <b>26.28%</b>.</li>
+                        <li>🤰 <b>Low-income</b> nations record the <b>smallest</b> rates of abortion and unintended pregnancies terminated through abortion.</li>
                       </ul>
                 </section>
-                <a href="#vis1"><button class="vis_button" style="margin-top: 20px;">Back to Start</button></a>
+                <a href="#vis1"><button class="vis_button" style="margin-top: 20px;" id="button7">Back to Start</button></a>
             </section>
         </section>
         

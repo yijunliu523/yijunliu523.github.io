@@ -10,9 +10,11 @@
     font-size: 17px;
     line-height: 30px;
     background-color: #f09a7d5a;
-    overflow: scroll !important;
     -ms-overflow-style: none; 
     scrollbar-width: none;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    overflow-y: auto;
 }
 .poem::-webkit-scrollbar {
   display: none;
@@ -143,7 +145,6 @@
     font-weight: 500;
   }
 .real_vis{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,4 +171,77 @@
 #facts li{
   list-style: square !important;
   margin-top: 10px;
+}
+
+.real_vis svg:hover{
+  background-color: #a75d5d34;
+  transition-duration: 1s;
+}
+
+.no-hover {
+  pointer-events: none;
+  background-color: none;
+}
+
+
+.real_vis svg:click{
+  background-color: black;
+  transition-duration: 1s;
+}
+
+#message-box, #message-box-2, #message-box-3, #message-box-4, #message-box-5{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+.highlight {
+  text-shadow: 1px 0px 1px #0000007f;
+  transition: text-shadow 0.3s ease;
+}
+
+.placeholder{
+  height: 30vh;
+}
+
+.correct-visualization {
+  border: 1px solid green;
+}
+
+.wrong-visualization {
+  border: 1px solid red;
+}
+
+.message-box-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.message-box-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 1.5s, opacity 1.5s ease-in-out; /* Delay the visibility transition until after the opacity transition */
+}
+
+.message-wrong {
+  background: #A75D5D !important;
+}
+
+.message-right {
+  background: #7DA75D !important;
+}
+
+.button-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 100px;
+  z-index: 10000;
 }
