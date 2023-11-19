@@ -758,11 +758,11 @@ async function vis5(dataset, HTMLID) {
 
 
   
-                   chartGroup.append("g")
+  chartGroup.append("g")
        .attr("transform", `translate(0,${height})`)
        .call(d3.axisBottom(x));
   
-       chartGroup.append("g")
+      chartGroup.append("g")
        .call(d3.axisLeft(y));
   
     ['% all pregancy ended in abortion', '% unintended pregancy', '% unintended ended in abortion'].forEach(key => {
@@ -782,6 +782,7 @@ async function vis5(dataset, HTMLID) {
          .attr("class", sanitizedKey)
          .attr("cx", d => x(d.Region))
          .attr("cy", d => y(d.value))
+         .attr("transform", `translate(50, 20)`)
          .attr("r", 5)
          .attr("fill", color(key));
     });
