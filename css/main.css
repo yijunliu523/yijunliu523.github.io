@@ -197,3 +197,13 @@ nav a~a{
 .gd_images_baking img{
     width: 250px !important;
 }
+
+.links_hobby a{
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.links_hobby a:hover{
+    color: black;
+    text-decoration: underline;
+}
