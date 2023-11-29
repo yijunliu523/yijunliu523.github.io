@@ -216,7 +216,7 @@
                         <li>🤰 <b>Low-income</b> nations record the <b>smallest</b> rates of abortion and unintended pregnancies terminated through abortion.</li>
                       </ul>
                 </section>
-                <a href="#vis1"><button class="vis_button" style="margin-top: 20px;" id="button7">Back to Start</button></a>
+                <button class="vis_button" style="margin-top: 20px;" id="button7" onclick="navigateAndRefresh()">Back to Start</button>
             </section>
         </section>
         
@@ -234,6 +234,13 @@
             Please use your laptop to access this site or enter full screen.
 		</section>
 	</section>
+
+    <script>
+        function navigateAndRefresh() {
+            window.location.hash = '#vis1';
+            window.location.reload();
+        }
+    </script>
     
 </body>
 </html>
