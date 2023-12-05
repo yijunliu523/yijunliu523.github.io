@@ -245,3 +245,14 @@
   height: 100px;
   z-index: 10000;
 }
+#vis_button_refresh{
+  position: fixed;
+  top: 0;
+  right: 3.8vw;
+  opacity: 0.7;
+  width:100px;
+  font-size: 10px;
+  height: 30px;
+  line-height: 5px;
+  padding: 5px;
+}
