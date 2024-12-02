@@ -1,57 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PGF97MWY6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0PGF97MWY6');
-</script>
-	<title>YIJUN LIU | Welcome!</title>
+	<title>Yijun Liu | about</title>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Mukta|Rajdhani&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/main.css">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
-
-	</script>
-	<link rel="icon" type="image/x-ico" href="/img/logo.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-ico" href="./img/logo.ico" />
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="./research.html">Research</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./hobbies.html">Hobbies</a>
-        </div>
-
-        <div id="nav_name">
-            <p><a href="./index.html">Yijun Liu</a></p>
-        </div>
-    </nav>
-
-    <section id="index_body">
-        <section id="index_body_text">
-            <section>
-                <p id="headline">Hi, my name is Yijun</p>
-                <p id="intro">
-                    I'm a senior at Emory University majoring in Computer Science and Quantitative Science in Sociology. <br/><br/>
-                    I am currently working with Dr. Chinmay Kulkarni & Dr. Soya Park for my thesis project on <i>Enhancing Collaborative Web App Inclusivity via LLMs</i>. I am also working with Dr. Vicki Hertzberg and Dr. Joyce Ho for a ML project in cardiology.<br/><br/>
-                    I also had the honor to be mentored by the greatest advisors: Dr. Emily Wall, Dr. Daniel Votipka, and Dr. Ting Li. <br/><br/>
-                    My research interest lies in human-computer interaction, social computing, human-AI collaboration, and computer-supported cooperative work. Specifically, I want to <b>design intelligent systems to foster creativity and inclusivity in collaborative technologies</b>. <br/><br/>
-                    email me - yijun.liu2 at emory dot edu <br/>
-                    github me - <a href="https://github.com/isSherrrrry" target="_blank">isSherrrrry</a>
-                </p>
+    <section class="wrapper">
+        <nav>
+            <div>
+            </div>
+            <div>
+                <a href="#about">about</a><br/>
+                <a href="#research">research</a><br/>
+                <a href="#others">others</a>
+            </div>
+    
+        </nav>
+    
+        <section id="index_body">
+            <section id="about" class="content_section">
+                <section class="about_left">
+                    <img src="./img/profile_pi.png" class="profile_pic">
+                </section>
+                <section class="about_right">
+                    <p id="name">Yijun Liu <span class="chinese"> 刘奕君  </span><span id="pronoun">she/her</span></p>
+                    <p id="intro">
+                        I'm a first-year Ph.D. student at the <a href="https://cs.illinois.edu/" target="_blank">Siebel School of Computing and Data Science</a> at the University of Illinois Urbana-Champaign.
+                        I am broadly intrigued by human-AI collaborative technologies that draw inspiration from human-human interaction strategies and emphasize human-in-the-loop collaboration. <br/><br/>
+                        I hold a B.S. in Computer Science and a B.S. in Quantitative Sciences with a focus on Sociology from <a href="https://computerscience.emory.edu/index.html" target="_blank">Emory University</a>. During my undergraduate studies, I had the privilege of working with exceptional professors on projects spanning social computing, visualization, and machine learning.
+                    </p>
+                    <section class="contacts">
+                        You can contact me at:
+                        <span class="contacts_text">
+                             yijun6 at illinois dot edu 
+                        </span>
+                        <section class="contacts_links">
+                            <span>[<a href="https://github.com/isSherrrrry" target="_blank">github</a>]</span>
+                            <span>[<a href="" target="_blank">google scholar</a>]</span>
+                            <span>[<a href="https://twitter.com/yijunliu23" target="_blank">twitter</a>]</span>
+                            <span>[<a href="./file/cv.pdf" target="_blank">CV-Dec 24</a>]</span>
+                        </section>
+                    </section>
+                </section>
             </section>
-            <img src="./img/profile_pic.jpg" id="profile_pic"/>
+    
+            <section class="content_section" id="research">
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">Unmasking Dunning-Kruger Efect in Visual Reasoning and Visual Data Analysis</p>
+                        <p class="pub_author"> Mengyu Chen, <b>Yijun Liu</b>, Emily Wall (VIS'24) </p>
+                        <section class="links">
+                            <span>[<a href="./file/DKEVIS24.pdf" target="_blank">paper</a>]</span>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">CodeCuddle: Automating Inclusive Web Design with Large Language Model</p>
+                        <p class="pub_author"><b>Yijun Liu </b> (Undegrad Thesis)</p>
+                        <section class="links">
+                            <span>[<a href="https://etd.library.emory.edu/concern/etds/pc289k587?locale=en" target="_blank">thesis</a>]</span>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title"> Predicting Atrial Fibrillation Ablation Outcomes: A Machine Learning Approach Leveraging a Large Administrative Claims Database</p>
+                        <p class="pub_author"><b>Yijun Liu</b>, Mustapha Oloko-Oba, Kathryn Wood, Michael S. Lloyd, Joyce C. Ho, Vicki Stover
+                            Hertzberg</p>
+                        <section class="links">
+                            <span>[<a href="https://www.medrxiv.org/content/10.1101/2024.11.16.24317420v2" target="_blank">preprint</a>]</span>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">Machine Learning-Based Identification of High-Risk Patterns in Atrial Fibrillation Ablation Outcomes</p>
+                        <p class="pub_author">Mustapha Oloko-Oba, <b>Yijun Liu</b>, Kathryn Wood, Michael S. Lloyd, Joyce C. Ho, Vicki Stover
+                            Hertzberg</p>
+                        <section class="links">
+                            <span>[<a href="https://www.medrxiv.org/content/10.1101/2024.11.27.24318097v1" target="_blank">preprint</a>]</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section id="others" class="content_section">
+                <p>Other Projects</p>
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">Conversational AI</p>
+                        <section class="links">
+                            <span>[<a href="./file/leanna.pdf" target="_blank">LEANNA Business Chatbot</a>]</span>
+                            <span>[<a href="https://fxo.io/m/utilisation-enchanters-3674" target="_blank">Women’s Health Chat Bot</a>]</span>
+                            <span>[<a href="https://github.com/yijunliu23/Selfinity_AI" target="_blank">Selfinity</a>]</span>
+                        </section>
+                    </section>
+                </section>
+               
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">Data Analysis and Visualization</p>
+                        <section class="links">
+                            <span>[<a href="./misc/website/start.html" target="_blank">What is She: Poetic Justice</a>]</span>
+                            <span>[<a href="./misc/HCI/HCIsubway_home.html" target="_blank">Things Lost (But not Found Yet) on NYC Subway</a>]</span>
+                            <span>[<a href="./file/datafest_ppt.pdf" target="_blank">Understanding players’ behaviors via Elm city Stories</a>]</span>
+                            <span>[<a href="./file/falldc_ppt.pdf" target="_blank">Combating the Food Insecurity in the US</a>]</span>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">A Student Observatory for Cybersecurity Education Research</p>
+                        <p class="pub_author"><b>Yijun Liu</b>, James Mattei, Daniel Votipka</p>
+                        <section class="links">
+                            <span>[<a href="./file/finalreport.pdf" target="_blank">report</a>]</span>
+                            <span>[<a href="./file/ghc.pdf" target="_blank">slides</a>]</span>
+
+                        </section>
+                    </section>
+                </section>
+
+                <section class="pub">
+                    <section class="pub_detail">
+                        <p class="pub_title">One-to-One and One-to-Multiple User-Task Mapping in Task-Abundant Mobile Crowd Sensing
+                        </p>
+                        <p class="pub_author"><b>Yijun Liu</b>, Ting Li</p>
+                        <section class="links">
+                            <span>[<a href="./file/sorsposter.pdf">poster</a>]</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+    
+            <section class="footer">
+                <p>© 2024 Yijun Liu & Mingxuan Liu</p>
+            </section>
         </section>
     </section>
+    
 </body>
 </html>

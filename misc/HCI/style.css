@@ -1,0 +1,232 @@
+/* 
+
+COLOR USED
+
+#ffffff
+#f7fbfc 
+#d6e6f2 
+#b9d7ea 185 215 234
+#769fcd 
+#5177A4  94 118 162
+#004a7c 
+
+*/
+
+
+
+/* OVERALL */
+
+html, body,
+ul, li, ol, dl, dd, dt,
+p, h1, h2, h3, h4, h5, h6,
+form, fieldset, legend, img,
+div, header, footer, section, form, input, select{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	overflow: hidden;
+	background: #f7fbfc;
+	background-color: white;
+}
+
+body a{
+	text-decoration: none;
+	color: inherit;
+	z-index: 1000;
+}
+
+
+
+/* NAVIGATION */
+
+.content{
+	animation: appear 3.5s ease forwards;
+}
+
+.isContent{
+	height: 100vh;
+}
+
+
+.realContent, .content{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.nav_box{
+	animation: appear 2s ease forwards;
+	animation-delay: 3s;
+}
+
+.nav{
+	width: 100vw;
+	height: 72px;
+	color: #769fcd;
+	background-color: #f7fbfc;
+	transition: all 1s linear;
+	display: inline-block;
+}
+
+.nav:hover{
+	background-color: rgba(118,159,205,0.9);
+	color: white;
+	text-shadow: 0.5px 0.5px 2px #769fcd;
+	transition: all 1s linear;
+}
+
+.name_sherry{
+	font-size:25px;
+	font-weight: bold;
+	margin-left: 85vw;
+	position: relative;
+	margin-top: -35px;
+}
+
+.navlist{
+	width: 90vw;
+	margin-left: 8vw;
+	font-size: 18px;
+	margin-top: 35px;
+}
+
+.navlist li{
+	display: inline-block;
+	text-align: center;
+	margin-top: 13px;
+}
+.navlist li:hover{
+	text-decoration: underline;
+	text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.4);
+	transition-duration: 0.5s;
+}
+
+.navlist li~li{
+	margin-left: 2vw;
+}
+
+.droplist{
+	display: none;
+	width: 150px;
+	position: absolute;
+	margin-top: 24px;
+	margin-left: -40px;
+	text-align: left;
+	z-index: 10000;
+	text-shadow: none;
+}
+.droplist2{
+	margin-left: -80px;
+	width: 220px;
+}
+.droplist section{
+	font-size: 15px;
+	padding-left: 10px;
+	background-color: rgba(118,159,205,0.9);
+}
+.droplist section:hover{
+	background-color: rgba(118,159,205,0.4);
+	color: white;
+	text-shadow: 0.5px 0.5px 2px #769fcd;
+	transition: all 1s linear;
+}
+.dropdown:hover .droplist{
+	position: absolute;
+	display: inline-block;
+}
+
+
+/* SELECT */
+
+body select{
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+body select:focus, select:checked, select:clicked {
+	outline: none;
+}
+
+
+/* YOU & ME */
+.ournames{
+	position: fixed;
+	display: inline-block;
+	top: 85vh;
+	right: -175px;
+	width: 220px;
+	height: 65px;
+	background-color:#769fcd;
+	padding: 10px;
+	transition: all 1s ease;
+	border-radius: 60px;
+}
+.ournames section{
+	display: inline-block;
+}
+.name_logo{
+	top: -7px;
+	left: 3px;
+}
+
+.name_logo p{
+	width: 24px;
+	height: 10px;
+	border-bottom: 1px solid #f7fbfc;
+}
+.name_isNames{
+	text-align: right;
+	left: 10px;
+	color: #f7fbfc;
+	font-size: 14px;
+}
+.name_isNames p span{
+	font-weight: bolder;
+}
+.ournames:hover{
+	right: -30px;
+	transition: all 1s ease;
+}
+.wap{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	.content{
+		display: none;
+	}
+	.wap{
+		display: inline-block;
+		color: #5177A4;
+		font-family: 'Mukta', sans-serif;
+		font-size: 7vw;
+		width: 50vw;
+		margin-left: 10vw;
+		margin-top: 30vh;
+
+	}
+}

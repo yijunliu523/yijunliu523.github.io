@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What is She | Poem-Vis </title>
+	<meta charset="utf-8">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="./js/visualization.js"></script>
+	<link rel="icon" type="image/x-ico" href="/img/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/vis.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Galdeano&family=Handlee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="content">
+        <section class="poem">
+            <ul class="verse placeholder"></ul>
+            <ul class="verse verse1">
+                <li>For every extra boy gaining <span>literacy</span>,</li>
+                <li>She’s the <span>GDI’s</span> lost equity.</li>
+                <li>In the market where <span>wages</span> are unfairly balanced,</li>
+                <li>She becomes a problem, left unchallenged.</li>
+            </ul>
+            
+            <ul class="verse verse2">
+                <li>For chores that vanish in the dark,</li>
+                <li>She’s the <span>unpaid labor</span>, society’s shameful mark.</li>
+                <li>In homes that <span>safety</span> is but wishful dreams,</li>
+                <li>She becomes the news that the media streams.</li>
+            </ul>
+            
+            <ul class="verse verse3">
+                <li>For medical research labs favoring males’ deeds,</li>
+                <li>She’s the outlier in the statistics.</li>
+                <li>In closed clinics, her <span>choices</span> recede,</li>
+                <li>She becomes a doll for politicians to mislead.</li>
+            </ul>
+            
+            <ul class="verse verse4">
+                <li>Is it she, or is it “secondary-he”?</li>
+                <li>Society assigned roles that shouldn’t be.</li>
+                <li>Gender, class, race, a complex weave,</li>
+                <li>A trap so tight, she struggles to escape.</li>
+            </ul>
+
+            <ul class="verse placeholder"></ul>
+        </section>
+
+        <section class="vis">
+            <button class="vis_button" id="vis_button_refresh" onclick="navigateAndRefresh()">Back to Start</button>
+            <section class="vis_section" id="vis1">
+                <h3 class="title">What is She<p>Poem and Interactive Visualization</p></h3>
+                <section class="instruction">
+                    <p class="special_ins">Welcome!</p>
+                    <p>🤿 Dive into an interactive poetic experience that marries verse with data.</p>
+                    <p>⬅️ On the left, you'll find the poem <i>What is She</i>, focusing on women's rights.</p>
+                    <p>📈 As you proceed, you'll encounter <b>two visualizations</b> that correspond with highlighted lines from the poem, offering a quantitative perspective on the social issue.</p>
+                    <p>⚠️ Be warned: <b>only one visualization presents accurate data</b>. </p>
+                    <p>❓ Can you discern societal reality from misconception? Hover and click the visualization you think to be the right one!</p><br/>
+                    <p>Enjoy the journey! Ready?</p>
+                </section>
+                <a href="#vis2"><button class="vis_button" id="button1">Start</button></a>
+            </section>
+
+            <section class="vis_section" id="vis2">
+                <h3>Mean School Year by Gender in 2021 with GDI</h3>
+                <section class="real_vis">
+                    <section class="true_vis">
+                        <svg id="true_vis_1" width="740" height="300"></svg>
+                    </section>
+                    <section class="false_vis">
+                        <svg id="false_vis_1" width="740" height="300"></svg>
+                    </section>
+                </section>
+                <section class="buttons">
+                    <div class="button-overlay" id="button-overlay-2"></div>
+                    <a href="#vis1"><button class="vis_button button_prev" id="button_2_prev">Prev</button></a>
+                    <a href="#vis3"><button class="vis_button button_next" id="button_2_next">Next</button></a>
+                </section>
+                
+                <section class="explain">
+                    <p>The Gender Development Index (GDI) is a measure used to gauge gender equality in terms of life expectancy, education, and income within countries. It's Female HDI: Male HDI. Lower means female are having lower HDI than male in that country.</p>
+                </section>
+
+                <section id="message-box">
+                    <p></p>
+                </section>
+            </section>
+
+            <section class="vis_section" id="vis3">
+                <h3>Gender Pay Gap by Industry in 2014</h3>
+                <section class="real_vis">
+                    <section class="false_vis">
+                        <svg id="false_vis_2" width="740" height="300"></svg>
+                    </section>
+                    <section class="true_vis">
+                        <svg id="true_vis_2" width="740" height="300"></svg>
+                    </section>
+                </section>
+                <section class="buttons">
+                    <div class="button-overlay" id="button-overlay-3"></div>
+                    <a href="#vis2"><button class="vis_button button_prev" id="button_3_prev">Prev</button></a>
+                    <a href="#vis4"><button class="vis_button button_next" id="button_3_next">Next</button></a>
+                </section>
+
+                <section id="message-box-2">
+                    <p></p>
+                </section>
+                
+            </section>
+
+            <section class="vis_section" id="vis4">
+                <h3>Unpaid Work by Gender in 2021</h3>
+                <section class="real_vis">
+                    <section class="false_vis">
+                        <svg id="false_vis_3" width="740" height="300"></svg>
+                    </section>
+                    <section class="true_vis">
+                        <svg id="true_vis_3" width="740" height="300"></svg>
+                    </section>
+                </section>
+                <section class="buttons">
+                    <div class="button-overlay" id="button-overlay-4"></div>
+                    <a href="#vis3"><button class="vis_button button_prev" id="button_4_prev">Prev</button></a>
+                    <a href="#vis5"><button class="vis_button button_next" id="button_4_next">Next</button></a>
+                </section>
+
+                <section id="message-box-3">
+                    <p></p>
+                </section>
+                
+            </section>
+
+            <section class="vis_section" id="vis5">
+                <h3>% Women Suffering Domestic Violence by Country</h3>
+                <section class="real_vis">
+                    <section class="true_vis true_vis_section_4">
+                        <svg id="true_vis_4" width="540" height="300"></svg>
+                        <section class="countries">
+                            <p>Top Countries: </p>
+                            <ul>
+                                <li>Kiribati: <b>53.0%</b></li>
+                                <li>Fiji: <b>52.0%</b></li>
+                                <li>Papua New Guinea: <b>51.0%</b></li>
+                                <li>Solomon Islands: <b>50.0%</b></li>
+                                <li>Bangladesh: <b>50.0%</b></li>
+                              </ul>
+                        </section>
+                    </section>
+                    <section class="false_vis true_vis_section_4">
+                        <svg id="false_vis_4" width="540" height="300"></svg>
+                        <section class="countries">
+                            <p>Top Countries: </p>
+                            <ul>
+                                <li>Kiribati: <b>48.0%</b></li>
+                                <li>Fiji: <b>47.0%</b></li>
+                                <li>Papua New Guinea: <b>46.0%</b></li>
+                                <li>Solomon Islands: <b>45.0%</b></li>
+                                <li>Bangladesh: <b>45.0%</b></li>
+                            </ul>
+                        </section>
+                          
+                    </section>
+                </section>
+                <section class="explain">
+                    <p></p>
+                </section>
+                <section class="buttons">
+                    <div class="button-overlay" id="button-overlay-5"></div>
+                    <a href="#vis4"><button class="vis_button button_prev" id="button_5_prev">Prev</button></a>
+                    <a href="#vis6"><button class="vis_button button_next" id="button_5_next">Next</button></a>
+                </section>
+
+                <section id="message-box-4">
+                    <p></p>
+                </section>
+            </section>
+
+            <section class="vis_section" id="vis6">
+                <h3>Women Abortion and Pregancy Stats by Country Income in 2015-2019</h3>
+                <section class="real_vis">
+                    <section class="false_vis">
+                        <svg id="false_vis_5" width="740" height="300"></svg>
+                    </section>
+                    <section class="true_vis">
+                        <svg id="true_vis_5" width="740" height="300"></svg>
+                    </section>
+                </section>
+                <section class="explain">
+                    <p></p>
+                </section>
+                <section class="buttons">
+                    <div class="button-overlay" id="button-overlay-6"></div>
+                    <a href="#vis5"><button class="vis_button button_prev" id="button_6_prev">Prev</button></a>
+                    <a href="#vis7"><button class="vis_button button_next" id="button_6_next">Next</button></a>
+                </section>
+
+                <section id="message-box-5">
+                    <p></p>
+                </section>
+            </section>
+
+            <section class="vis_section" id="vis7">
+                <h3 class="title" id="title2">Struggles to Escape: <p>A Snapshot of Gender Disparities</p></h3>
+                <section class="instruction" id="facts">
+                    <ul>
+                        <li>🏫 The greatest percentage-based educational gender gap is in <b>Senegal</b>, where females average 2.6 years of schooling against males' 4.5 years.</li>
+                        <li>🏫 <b>Togo</b> exhibits the largest absolute education gap between genders, standing at 3.4 years.</li>
+                        <li>📊 The global Gender Development Index (GDI) is <b>0.947</b>, implying that women, on average, have worse life quality than men worldwide.</li>
+                        <li>💰 Wage inequalities exist in <b>every</b> occupational tier, with the largest percentage-based disparity seen in <b>senior management and executive</b> positions (26.76%).</li>
+                        <li>🏠 In <b>India</b>, women dedicate an <b> extra 5 hours per day</b> to unpaid labor in comparison to men.</li>
+                        <li>🏠  Around the world, women allocate <b>133.1 more minutes each day</b> to unpaid tasks than men.</li>
+                        <li>⚠️ In <b>Kiribati, Fiji, Papua New Guinea, Solomon Islands, and Bangladesh</b>, over <b>50%</b> of women are victims of domestic violence.</li>
+                        <li>⚠️ The global average rate of domestic violence against women is <b>26.28%</b>.</li>
+                        <li>🤰 <b>Low-income</b> nations record the <b>smallest</b> rates of abortion and unintended pregnancies terminated through abortion.</li>
+                      </ul>
+                </section>
+                <button class="vis_button" style="margin-top: 20px;" id="button7" onclick="navigateAndRefresh()">Back to Start</button>
+            </section>
+        </section>
+        
+    </section>
+    <section class="footer">
+        <p>Made with ❤️ by Yijun Liu</p>
+    </section>
+
+    
+
+
+    <section class="wap">
+		<section>
+            Sorry...<br/>
+            Please use your laptop to access this site or enter full screen.
+		</section>
+	</section>
+
+    <script>
+        function navigateAndRefresh() {
+            window.location.hash = '#vis1';
+            window.location.reload();
+        }
+    </script>
+    
+</body>
+</html>

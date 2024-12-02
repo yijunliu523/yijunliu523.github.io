@@ -1,0 +1,165 @@
+Country Name,Country Code,Value
+Afghanistan,AFG,3.0
+Albania,ALB,3.0
+Angola,AGO,2.0
+Argentina,ARG,17.0
+Armenia,ARM,0.0
+Australia,AUS,13.0
+Austria,AUT,5.0
+Azerbaijan,AZE,4.0
+Bangladesh,BGD,40.0
+Belarus,BLR,11.0
+Belgium,BEL,12.0
+Belize,BLZ,14.0
+Benin,BEN,16.0
+Bhutan,BTN,12.0
+Bolivia,BOL,32.0
+Bosnia and Herzegovina,BIH,2.0
+Botswana,BWA,2.0
+Brazil,BRA,13.0
+Bulgaria,BGR,9.0
+Burkina Faso,BFA,9.0
+Burundi,BDI,3.0
+Cabo Verde,CPV,9.0
+Cambodia,KHM,9.0
+Cameroon,CMR,29.0
+Central African Republic,CAF,19.0
+Chad,TCD,19.0
+Chile,CHL,11.0
+China,CHN,9.0
+Colombia,COL,20.0
+Comoros,COM,6.0
+"Congo, Dem. Rep.",COD,37.0
+Costa Rica,CRI,17.0
+Cote d'Ivoire,CIV,1.0
+Croatia,HRV,3.0
+Cuba,CUB,4.0
+Cyprus,CYP,6.0
+Czechia,CZE,12.0
+Denmark,DNK,13.0
+Dominican Republic,DOM,9.0
+East Asia & Pacific,EAS,10.3372229
+Ecuador,ECU,2.0
+"Egypt, Arab Rep.",EGY,20.0
+El Salvador,SLV,11.0
+Equatorial Guinea,GNQ,36.0
+Estonia,EST,11.0
+Ethiopia,ETH,27.0
+Europe & Central Asia,ECS,5.916894549999999
+Fiji,FJI,4.0
+Finland,FIN,13.0
+France,FRA,12.0
+Gabon,GAB,1.0
+"Gambia, The",GMB,15.0
+Georgia,GEO,0.0
+Germany,DEU,11.0
+Ghana,GHA,14.0
+Greece,GRC,8.0
+Grenada,GRD,18.0
+Guatemala,GTM,11.0
+Guinea,GIN,27.0
+Guyana,GUY,21.0
+Haiti,HTI,13.0
+High income,HIC,1.31154896
+Honduras,HND,7.0
+"Hong Kong SAR, China",HKG,3.0
+Hungary,HUN,9.0
+Iceland,ISL,11.0
+India,IND,25.0
+Indonesia,IDN,12.0
+"Iran, Islamic Rep.",IRN,1.0
+Iraq,IRQ,16.0
+Ireland,IRL,6.0
+Italy,ITA,6.0
+Jamaica,JAM,14.0
+Japan,JPN,1.0
+Jordan,JOR,14.0
+Kazakhstan,KAZ,6.0
+Kenya,KEN,2.0
+Kiribati,KIR,43.0
+Kosovo,XKX,3.0
+Kyrgyz Republic,KGZ,13.0
+Lao PDR,LAO,9.0
+Latin America & Caribbean,LCN,1.971595709999999
+Latvia,LVA,5.0
+Lesotho,LSO,3.0
+Liberia,LBR,3.0
+Lithuania,LTU,12.0
+Low income,LIC,2.572874409999997
+Lower middle income,LMC,2.18925599
+Luxembourg,LUX,10.0
+Malawi,MWI,20.0
+Malaysia,MYS,9.0
+Maldives,MDV,9.0
+Mali,MLI,19.0
+Malta,MLT,7.0
+Marshall Islands,MHL,2.0
+Mexico,MEX,14.0
+"Micronesia, Fed. Sts.",FSM,2.0
+Middle East & North Africa,MEA,19.72377185
+Moldova,MDA,17.0
+Mongolia,MNG,17.0
+Montenegro,MNE,6.0
+Mozambique,MOZ,20.0
+Myanmar,MMR,9.0
+Namibia,NAM,17.0
+Nauru,NRU,3.0
+Nepal,NPL,17.0
+Netherlands,NLD,11.0
+New Zealand,NZL,13.0
+Nicaragua,NIC,13.0
+Nigeria,NGA,14.0
+North America,NAC,15.42152758
+North Macedonia,MKD,3.0
+Norway,NOR,10.0
+Pakistan,PAK,19.0
+Palau,PLW,21.0
+Panama,PAN,6.0
+Papua New Guinea,PNG,41.0
+Paraguay,PRY,8.0
+Peru,PER,2.0
+Philippines,PHL,4.0
+Poland,POL,3.0
+Portugal,PRT,8.0
+Romania,ROU,8.0
+Rwanda,RWA,28.0
+Samoa,WSM,3.0
+Sao Tome and Principe,STP,17.0
+Senegal,SEN,14.0
+Serbia,SRB,7.0
+Sierra Leone,SLE,26.0
+Singapore,SGP,1.0
+Slovak Republic,SVK,8.0
+Slovenia,SVN,8.0
+Solomon Islands,SLB,40.0
+South Africa,ZAF,14.0
+South Asia,SAS,2.535183760000002
+South Sudan,SSD,31.0
+Spain,ESP,5.0
+Sri Lanka,LKA,14.0
+Sub-Saharan Africa,SSF,23.041307340000003
+Suriname,SUR,18.0
+Sweden,SWE,11.0
+Switzerland,CHE,2.0
+Tajikistan,TJK,14.0
+Tanzania,TZA,2.0
+Thailand,THA,14.0
+Timor-Leste,TLS,28.0
+Togo,TGO,15.0
+Tonga,TON,2.0
+Trinidad and Tobago,TTO,18.0
+Tunisia,TUN,15.0
+Turkiye,TUR,22.0
+Tuvalu,TUV,2.0
+Uganda,UGA,3.0
+Ukraine,UKR,8.0
+United Kingdom,GBR,4.0
+United States,USA,6.0
+Upper middle income,UMC,2.140880469999999
+Uruguay,URY,8.0
+Vanuatu,VUT,37.0
+"Venezuela, RB",VEN,9.0
+Vietnam,VNM,15.0
+West Bank and Gaza,PSE,19.0
+Zambia,ZMB,1.0
+Zimbabwe,ZWE,25.0
