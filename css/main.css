@@ -206,8 +206,8 @@ nav a:hover::after {
     font-size: 12px;
 }
 
-/* ===== Mobile overrides (apply when width < 1000px) ===== */
-@media (max-width: 999px){
+/* ===== Mobile overrides (apply when width < 800px) ===== */
+@media (max-width: 1200px){
 
   /* Top nav instead of fixed side nav */
   nav{
